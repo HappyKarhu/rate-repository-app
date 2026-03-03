@@ -6,6 +6,7 @@ import AppBar from './AppBar';
 const styles = StyleSheet.create({
   container: {
     flexGrow: 3,
+    backgroundColor: '#e1e4e8',
   },
 });
 
