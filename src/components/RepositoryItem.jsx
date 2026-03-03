@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, FlatList, StyleSheet, Text } from 'react-native';
+import {View, StyleSheet, Text } from 'react-native';
 
 
 const RepositoryItem = ({repository}) => (
@@ -18,7 +18,7 @@ const RepositoryItem = ({repository}) => (
 
 const styles = StyleSheet.create({
   item: {
-    backgroundColor: '#dbf2c2',
+    backgroundColor: '#7fbf9f',
     padding: 20,
     marginVertical: 8,
     marginHorizontal: 16,
