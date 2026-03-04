@@ -4,6 +4,7 @@ import { Link } from 'react-router-native';
 
 const styles = StyleSheet.create({
   tab: {
+    paddingHorizontal: 16,
     paddingVertical: 8,
   },
   text: {
