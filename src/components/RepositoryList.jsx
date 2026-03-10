@@ -1,4 +1,4 @@
-import {View, FlatList, StyleSheet } from 'react-native';
+import {View, ScrollView, StyleSheet } from 'react-native';
 import RepositoryItem from './RepositoryItem';
 
 const styles = StyleSheet.create({
@@ -58,15 +58,16 @@ const ItemSeparator = () => <View style={styles.separator} />;
 
 const RepositoryList = () => {
   return (
-    <FlatList
-      data={repositories}
-      renderItem={({ item }) => (
-        <RepositoryItem repository={item} />
-      )}
-      ItemSeparatorComponent={ItemSeparator}
-      // other props
-    />
+    <ScrollView style={{ flex: 1, padding: 16 }}>
+      {repositories.map((repository, index) => (
+        <View key={repository.id}>
+          <RepositoryItem repository={repository} />
+          {index < repositories.length - 1 && <ItemSeparator />}
+        </View>
+      ))}
+    </ScrollView>
   );
 };
+
 
 export default RepositoryList;

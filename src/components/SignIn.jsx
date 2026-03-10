@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     borderColor: '#ccc',
     padding: 10,
     marginBottom: 10,
-    backgroundColor: '#rgba(180,211,192,0.3)',
+    backgroundColor: 'rgba(180,211,192,0.3)',
   },
   button: {
     backgroundColor: theme.colors.primary,
